@@ -1,0 +1,12 @@
+.error {
+    color: darkred
+}
+
+body {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.btn-sm {
+    margin: 8px;
+}
