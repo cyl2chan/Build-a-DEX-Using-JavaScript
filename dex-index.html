@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moralis DEX</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h1>MoralisSwap</h1>
+            </div>
+            <div class="col-12 col-md-6 d-flex align-items-center justify-content-md-center">
+                <button class="btn btn-success btn-sm" id="btn-login">Moralis Login</button>
+                <button class="btn btn-success btn-sm" id="btn-buy-crypto">Buy Crypto</button>
+                <button class="btn btn-danger btn-sm" id="btn-logout">Logout</button>    
+            </div>
+        </div>
+    
+        <table class="table table-dark table-striped">
+            <thread>
+                <tr>
+                    <th>#</th>
+                    <th>Symbol</th>
+                    <th>Amount</th>
+                    <th>Action</th>
+                </tr>
+            </thread>
+            <tbody class="js-token-balances"></tbody>
+        </table>
+    
+        <form action="#" method="POST" class="exchange-form">
+            <div class="row">
+                <div class="col-12 col-md-6 mb-2">
+                    <label>
+                        <span class="js-from-token"></span>
+                        Amount:
+                        <input type="text" name="from-amount" class="js-from-amount" disabled />
+                    </label>
+                    <div class="js-amount-error error"></div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <label>
+                        Swap to:
+                        <select name="to-token"></select>
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button type="submit" class="js-submit btn btn-success btn-sm" disabled>Get Quote</button>
+                    <button class="js-cancel btn btn-warning btn-sm" disabled>Cancel</button>
+                </div>
+            </div>
+            <div class="js-quote-container"></div>
+        </form>
+    </div>
+
+   
+
+    <!-- Moralis SDK code -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./dex.js"></script>
+
+    <script>
+      // connect to Moralis server
+        const serverUrl = [my severeUrl]";
+        const appId = "[my appId]";
+        Moralis.start({ serverUrl, appId, });
+    </script>
+</body>
+</html>
