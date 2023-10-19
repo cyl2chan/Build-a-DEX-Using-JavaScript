@@ -1,8 +1,8 @@
 # Build-a-DEX-Using-JavaScript
 
-In this project, I built a crypto decentralized exchange. This exchange allows users to connect it to their Metamask (a crypto software wallet), get a quote on the wanted amount of a crypto coin, and buy it. <br>
-
 Language: Javascript, HTML, CSS
+
+In this project, I built a crypto decentralized exchange. This exchange allows users to connect it to their Metamask (a crypto software wallet), get a quote on the wanted amount of a crypto coin, and buy it. <br>
 
 __API__
 
